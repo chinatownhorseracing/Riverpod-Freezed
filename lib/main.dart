@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_freezed/models/person.dart';
 import 'package:riverpod_freezed/pages/collections_page.dart';
+import 'package:riverpod_freezed/pages/hotel_list_page.dart';
 import 'package:riverpod_freezed/pages/method_page.dart';
 import 'package:riverpod_freezed/pages/mutable_person_page.dart';
 import 'package:riverpod_freezed/pages/person_page.dart';
@@ -55,6 +56,7 @@ class MyHomePage extends StatelessWidget {
               title: 'Method',
               child: MethodPage(),
             ),
+            CustomButton(title: 'Hotel List', child: HotelListPage()),
           ],
         ),
       ),
