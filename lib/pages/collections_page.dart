@@ -6,7 +6,13 @@ class CollectionsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final immutableColl = ImmutableColl([]);
+    // final immutableColl = ImmutableColl([]);
+    // immutableColl.list.add(42);
+
+    final mutableColl = MutableColl([]);
+    mutableColl.list.add(42);
+    print(mutableColl);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Collections'),

@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_freezed/models/person.dart';
 import 'package:riverpod_freezed/pages/collections_page.dart';
+import 'package:riverpod_freezed/pages/method_page.dart';
 import 'package:riverpod_freezed/pages/mutable_person_page.dart';
 import 'package:riverpod_freezed/pages/person_page.dart';
 import 'package:riverpod_freezed/widgets/custom_button.dart';
@@ -49,6 +50,10 @@ class MyHomePage extends StatelessWidget {
             CustomButton(
               title: 'Collections',
               child: CollectionsPage(),
+            ),
+            CustomButton(
+              title: 'Method',
+              child: MethodPage(),
             ),
           ],
         ),
