@@ -1,4 +1,10 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:riverpod_freezed/models/person.dart';
+import 'package:riverpod_freezed/pages/collections_page.dart';
+import 'package:riverpod_freezed/pages/mutable_person_page.dart';
+import 'package:riverpod_freezed/pages/person_page.dart';
 import 'package:riverpod_freezed/widgets/custom_button.dart';
 
 void main() {
@@ -31,10 +37,18 @@ class MyHomePage extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.all(20),
           shrinkWrap: true,
-          children: [
+          children: const [
             CustomButton(
               title: 'Person',
               child: PersonPage(),
+            ),
+            CustomButton(
+              title: 'Mutable Person',
+              child: MutablePersonPage(),
+            ),
+            CustomButton(
+              title: 'Collections',
+              child: CollectionsPage(),
             ),
           ],
         ),
